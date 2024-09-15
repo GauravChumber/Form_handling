@@ -1,0 +1,20 @@
+Design a website to register for a fitness class.
+
+It should consist of following fields, but not limited to:
+
+	1. First Name
+	2. Last Name
+	3. Date of Birth
+	4. Gender
+	5. Email
+	6. Cell Number
+	7. Batch
+
+All the fields should be validated using php. All the validations for all the fields should be done while using functions. 
+
+Validations should include:
+	1. Empty Scenario
+	2. Restricting the use of special characters
+	3. Valid Email
+	4. Valid Cell number
+	5. Must be 18+ check on age
