@@ -7,9 +7,7 @@
     <title>Success</title>
 </head>
 <body>
-
 <h2>Form Submitted Successfully!</h2>
 <p>Thank you for submitting your information.</p>
-
 </body>
 </html>
