@@ -8,6 +8,6 @@
 </head>
 <body>
 <h2>Form Submitted Successfully!</h2>
-<p>Thank you for submitting your information.</p>
+<p>Thank you for submitting your information, we will get back to you shortly.</p>
 </body>
 </html>

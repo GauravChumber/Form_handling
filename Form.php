@@ -27,6 +27,11 @@
         <span class="error"><?php echo isset($_GET['dobError']) ? $_GET['dobError'] : ''; ?></span>
     </div>
     <div class="form-group">
+        <label for="email">Email:-</label>
+        <input type="email" id="email" name="email" value="<?php echo isset($_GET['email']) ? $_GET['email'] : ''; ?>" required>
+        <span class="error"><?php echo isset($_GET['emailError']) ? $_GET['emailError'] : ''; ?></span>
+    </div>
+    <div class="form-group">
         <label for="gender">Gender:-</label>
         <select id="gender" name="gender" required>
             <option value="">Select Gender</option>
@@ -35,11 +40,6 @@
             <option value="other" <?php echo isset($_GET['gender']) && $_GET['gender'] == 'other' ? 'selected' : ''; ?>>Other</option>
         </select>
         <span class="error"><?php echo isset($_GET['genderError']) ? $_GET['genderError'] : ''; ?></span>
-    </div>
-    <div class="form-group">
-        <label for="email">Email:-</label>
-        <input type="email" id="email" name="email" value="<?php echo isset($_GET['email']) ? $_GET['email'] : ''; ?>" required>
-        <span class="error"><?php echo isset($_GET['emailError']) ? $_GET['emailError'] : ''; ?></span>
     </div>
     <div class="form-group">
         <label for="cellNumber">Cell Number:-</label>

@@ -1,4 +1,3 @@
-
 .Main-container{
     display: block;
     align-content: center;
@@ -21,11 +20,11 @@ body {
 }
 label {
     display: block;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 }
 .error {
-    color: blue;
-    font-size: 0.9em;
+    color: orangered;
+    font-size: 0.8em;
 }
 form {
     color: darkblue;

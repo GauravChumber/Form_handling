@@ -28,6 +28,18 @@ function SpecialCharacters($value, $fieldName, &$errors) {
     return true;
 }
 
+function validateAge($dob, &$errors) {
+    $dobDate = new DateTime($dob);
+    $today = new DateTime();
+    $age = $today->diff($dobDate)->y;
+
+    if ($age < 18) {
+        $errors['dobError'] = "You must be at least 18 years old.";
+        return false;
+    }
+    return true;
+}
+
 function validateEmail($email, &$errors) {
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors['emailError'] = "Invalid email format.";
@@ -44,17 +56,7 @@ function validateCellNumber($cellNumber, &$errors) {
     return true;
 }
 
-function validateAge($dob, &$errors) {
-    $dobDate = new DateTime($dob);
-    $today = new DateTime();
-    $age = $today->diff($dobDate)->y;
 
-    if ($age < 18) {
-        $errors['dobError'] = "You must be at least 18 years old.";
-        return false;
-    }
-    return true;
-}
 
 // validation for the first name
 if (validateEmpty($firstName, 'firstName', $errors)) {
